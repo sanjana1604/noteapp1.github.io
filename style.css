@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Times New Roman', sans-serif;
+  color: #222;
+}
+/*Navbar setting*/
+.navbar {
+  padding: 0.8rem;
+  background-color: #068631;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 1.1rem;
+}
+.nav-item:hover {
+  color: white;
+  text-decoration: underline;
+}
+.nav-item {
+  text-align: right;
+  color: white;
+  font-size: 1.4rem;
+}
+.navbar-brand {
+  font-family: 'Curlz MT', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    height: 100%;
+    width: 110px;
+
+    padding-top: 100px;
+  }
+  .sidebar a {
+    font-size: 14px;
+  }
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+  .display-6 {
+    padding-top: 1.5rem;
+    padding-left: 7rem;
+    text-align: center;
+    font-size: 22px;
+  }
+  #textarea1 {
+    padding-left: 8rem;
+    padding-top: 1.3rem;
+    height: 50%;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 1.1rem;
+  }
+}
+
+/*style the textarea*/
+textarea {
+  display: block;
+  border-radius: 0.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1.2px solid #068631;
+  font-family: 'Times New Roman', sans-serif;
+  font-style: italic;
+
+  box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.2);
+}
+#textarea1 {
+  text-align: center;
+  padding-left: 6rem;
+  padding-top: 1.5rem;
+}
+
+.display-6 {
+  padding-top: 1.5rem;
+  padding-left: 7rem;
+  text-align: center;
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: bold;
+}
+
+textarea,
+form select {
+  background: white;
+  border: 1.2px solid #068631;
+}
+
+form select,
+form button {
+  display: inline-block;
+  margin: 0.8rem 1rem 0 0.5rem;
+}
+
+#formAddButton {
+  transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+}
+
+#formAddButton:hover {
+  cursor: pointer;
+}
+
+/* Note Styles */
+#notes {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-left: 14rem;
+}
+
+.note {
+  width: 10rem;
+  height: 10rem;
+  font-size: 0.8rem;
+  background: #ebf7f7;
+  border-radius: 0.4rem;
+  padding: 1.2rem 1.6rem;
+  margin: 2.4rem 0 2.4rem 1rem;
+  box-shadow: 0 0.9rem 1.2rem rgba(0, 0, 0, 0.5);
+  position: relative;
+  font-weight: bold;
+  font-family: 'Times New Roman', sans-serif;
+  font-style: italic;
+}
+
+.note.red {
+  color: lightcoral;
+}
+
+.note.blue {
+  color: lightskyblue;
+}
+
+.note.green {
+  color: lightgreen;
+}
+
+.note.yellow {
+  color: gold;
+}
+
+.note-text {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.note::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.8rem;
+
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+
+.note.red::after {
+  background-color: lightcoral;
+}
+
+.note.blue::after {
+  background-color: lightskyblue;
+}
+.note.green::after {
+  background-color: lightgreen;
+}
+.note.yellow::after {
+  background-color: gold;
+}
+
+.note span {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 0.2rem;
+  right: 0.2rem;
+  border-radius: 0.4rem;
+  color: #999;
+  text-align: center;
+}
+
+.note span:hover {
+  color: white;
+  background: red;
+  cursor: pointer;
+}

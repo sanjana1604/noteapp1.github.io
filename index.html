@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note js</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color:white;"><img src=" logo.png" />Makenotes</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html" style="color:white;">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Side navigation -->
+  <div class="col-12">
+    <h3 class="display-6">Write a note</h3>
+  </div>
+
+  <form>
+
+    <div id="textarea1"><textarea name="formNoteText" id="formNoteText" cols="50" rows="8" maxlength="300"></textarea>
+    </div>
+    <div class="sidebar">
+      <div id="formAddButton"><a href=" #"><i class="fas fa-sticky-note"></i> Add notes</a></div>
+      <a href="#"><i class="fas fa-paint-brush"></i> Font color
+        <select name="formColor" id="formColor">
+          <option value="none">-</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+        </select></a>
+      <a href="#"><i class="fa fa-fw fa-user"></i>About me</a>
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+  </form>
+
+  <div id="notes"></div>
+
+  <script src="app.js"></script>
+
+
+</body>
+
+</html>
